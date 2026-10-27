@@ -199,3 +199,97 @@ name is a private field, while Name is a public property that controls access to
 In modern C#, auto-properties such as public string Name { get; set; } are very common.
 
 
+# What is a Method?
+
+A method is an operation associated with a class or object.
+
+```java
+public class Calculator
+{
+    public int Multiply(int a, int b)
+    {
+        return a * b;
+    }
+}
+```
+
+
+Using it:
+
+```java
+Calculator calc = new Calculator();
+
+int answer = calc.Multiply(5, 10);
+Console.WriteLine(answer); // 50
+```
+
+
+A method defines what an object can do.
+
+A property represents information about an object.
+
+
+# What is this?
+
+The this keyword refers to the current object.
+
+For example:
+
+```java
+public class Student
+{
+    public string Name { get; set; }
+
+    public Student(string name)
+    {
+        this.Name = name;
+    }
+}
+```
+
+this.Name means the Name property belonging to the current object.
+
+It becomes particularly useful when parameter and field names are the same:
+
+```java
+private string name;
+
+public Student(string name)
+{
+    this.name = name;
+}
+```
+
+Here, this.name refers to the field, while name refers to the constructor parameter.
+
+# What is static?
+
+the static keyword means that a member (a variable, method, property, or constructor) or a class belongs to the type itself rather than to a specific instance (object) of that type
+
+Example:
+```java
+public class Calculator
+{
+    public static int Add(int a, int b)
+    {
+        return a + b;
+    }
+}
+```
+
+You can call it without creating a Calculator object:
+```java
+int result = Calculator.Add(10, 20);
+```
+
+Compare:
+```java
+// Instance method
+Calculator calc = new Calculator();
+calc.Multiply(5, 10);
+
+// Static method
+Calculator.Add(5, 10);
+```
+
+Static members are useful for operations that do not require individual object state.

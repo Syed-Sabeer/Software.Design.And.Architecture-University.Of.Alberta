@@ -18,4 +18,6 @@ so basically we just not have to write any code which can meet the functional re
 In software design, our starting point is ensuring the software structure suits the balance of qualities desired. 
 
 but we need to balance everything becuase sometimes High performance code may be less clear and less modular making it less maintainable. and vice versa 
-The extra overhead for high security may reduce performance.
+The extra overhead for high security may reduce performance. and this is called trade off
+
+trade-off is a situation where you accept losing one quality, advantage, or resource in order to gain a different, preferred benefit.

@@ -31,3 +31,15 @@ after much clarification we know about more like what login fields are required 
 
 so when the client agrees to the design we can start working on techincal diagram for example 
 API Contracts & Swagger/OpenAPI Specs (defining endpoints, request payloads, and response formats), Database Schema Designs / ERDs (mapping tables, foreign keys, and indexes), System Architecture Diagrams (using C4 models or sequence charts for microservices), and Software Design Patterns (such as Singleton or Observer patterns).
+
+
+
+User Story:
+A user story is a short, simple description of a software feature or product requirement written from the perspective of the end user.
+
+The Standard Format
+
+User stories usually follow a clear, three-part template:
+• As a [type of user]
+• I want [an action or capability]
+• So that [a benefit or business value]
